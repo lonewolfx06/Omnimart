@@ -37,9 +37,10 @@ body {
 
     /* --- UPDATED BACKGROUND --- */
     /* This replaces the static 'background-color' */
-    background: linear-gradient(95deg, 
-        darkblue,  /* Base dark */
-        purple,  /* Card dark */  /* A deep blue variant */
+    background: linear-gradient(115deg, 
+        darkblue,
+        indigo,  /* Base dark *
+          /* Card dark */  /* A deep blue variant */
         green   /* Back to base */
     );
     background-size: 400% 400%; /* Makes the gradient large enough to animate */
@@ -154,6 +155,9 @@ a:hover {
     color: var(--white);
     text-transform: uppercase;
     letter-spacing: 0.15em;
+    position: relative;
+    top:-14px;
+    margin-left: 10px;
     text-shadow: 0 0 8px var(--neon-blue); /* Logo glow */
 }
 
@@ -211,7 +215,7 @@ a:hover {
 }
 
 .hero-content {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .hero-content h1 {
@@ -226,26 +230,11 @@ a:hover {
     margin-bottom: var(--large-gap);
 }
 
-.hero-illustration {
-    min-width: 400px;
-    height: 300px;
-    background-color: rgba(0, 186, 255, 0.05); /* Placeholder background */
-    border: 1px solid rgba(0, 186, 255, 0.3);
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 186, 255, 0.3); /* Illustration glow */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: fadeSlideIn 1s forwards var(--medium-gap);
-}
-
-.illustration-box::after {
-    content: 'Digital Illustration';
-    color: var(--neon-blue);
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+.how-it-works,.cta-section{
+    background-color: rgba(0,0,0,0.5);
+    padding:40px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 
 /* Specific page heroes (Products, Contact) */
