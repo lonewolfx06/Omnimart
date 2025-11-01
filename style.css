@@ -38,9 +38,9 @@ body {
     /* --- UPDATED BACKGROUND --- */
     /* This replaces the static 'background-color' */
     background: linear-gradient(115deg, 
-        darkblue,
-        purple,  /* Base dark *
-          /* Card dark */  /* A deep blue variant */
+        darkblue,  /* Base dark */
+        purple,  /* Base dark */
+        /* Card dark */  /* A deep blue variant */
         green   /* Back to base */
     );
     background-size: 400% 400%; /* Makes the gradient large enough to animate */
