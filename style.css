@@ -673,6 +673,63 @@ a:hover {
     border-color: var(--neon-blue);
     box-shadow: 0 0 8px var(--neon-blue);
 }
+.team-section {
+    padding: 40px 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.team-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.team-subtitle {
+    margin-top: 5px;
+    color: #b3b3b3;
+}
+
+.team-container {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    backdrop-filter: blur(6px);
+}
+
+.team-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.team-role {
+    margin: 5px 0 15px;
+    color: #cfcfcf;
+}
+
+.team-links a {
+    display: inline-block;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #9f7cff;       /* Purple CTA like the button in your screenshot */
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.team-links a:hover {
+    color: #bda6ff;
+    text-decoration: underline;
+}
+
 
 
 /* ------------------ Footer ------------------ */
