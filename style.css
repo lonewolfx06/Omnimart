@@ -148,7 +148,11 @@ a:hover {
     justify-content: space-between;
     align-items: center;
 }
-
+#logoo{
+    position: relative;
+    top: 14px;
+    margin-right: 14px;
+}
 .navbar .logo a {
     font-size: 1.8rem;
     font-weight: 700;
