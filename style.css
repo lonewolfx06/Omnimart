@@ -1,17 +1,10 @@
-/*
-============================================================
-| CSS for Digi-Market Website - style.css
-| Dark-Neon Theme, Responsive Design (No JavaScript)
-============================================================
-*/
 
-/* ------------------ Design System Variables ------------------ */
 :root {
-    --background-dark: #0b0f19; /* Deep charcoal base */
-    --card-dark: #121826; /* Slightly lighter card panels */
-    --neon-blue: #00baff; /* Main accent and glow */
-    --text-primary: #e6e6e6; /* Main readable text */
-    --text-secondary: #a0a8b5; /* Muted text for descriptions */
+    --background-dark: #0b0f19; 
+    --card-dark: #121826; 
+    --neon-blue: #00baff; 
+    --text-primary: #e6e6e6; 
+    --text-secondary: #a0a8b5; 
     --white: #ffffff;
     --max-content-width: 1200px;
     --small-gap: 8px;
@@ -19,13 +12,10 @@
     --large-gap: 32px;
 }
 
-/* ------------------ Base & Typography ------------------ */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Global Transition for smooth interaction */
     transition: all 0.3s ease;
 }
 
@@ -33,18 +23,14 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-primary);
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll from animations */
-
-    /* --- UPDATED BACKGROUND --- */
-    /* This replaces the static 'background-color' */
+    overflow-x: hidden; 
     background: linear-gradient(115deg, 
-        darkblue,  /* Base dark */
-        purple,  /* Base dark */
-        /* Card dark */  /* A deep blue variant */
-        green   /* Back to base */
+        darkblue,  
+        purple,  
+        green   
     );
-    background-size: 400% 400%; /* Makes the gradient large enough to animate */
-    animation: gradientShift 12s ease infinite; /* 30-second slow, subtle shift */
+    background-size: 400% 400%; 
+    animation: gradientShift 12s ease infinite; 
 }
 
 .container {
@@ -76,10 +62,8 @@ a {
 
 a:hover {
     color: var(--white);
-    text-shadow: 0 0 5px var(--neon-blue); /* Subtle text glow on hover */
+    text-shadow: 0 0 5px var(--neon-blue); 
 }
-
-/* ------------------ Utility Classes (Buttons & Links) ------------------ */
 
 .btn-primary, .btn-secondary {
     display: inline-block;
@@ -102,7 +86,7 @@ a:hover {
 .btn-primary:hover {
     background-color: var(--white);
     color: var(--background-dark);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.8); /* Stronger glow on hover */
+    box-shadow: 0 0 15px rgba(0, 186, 255, 0.8); 
     transform: translateY(-2px);
 }
 
@@ -115,7 +99,7 @@ a:hover {
 
 .btn-secondary:hover {
     background-color: rgba(0, 186, 255, 0.1);
-    box-shadow: 0 0 15px var(--neon-blue); /* Stronger glow on hover */
+    box-shadow: 0 0 15px var(--neon-blue);
     transform: translateY(-2px);
 }
 
@@ -131,15 +115,13 @@ a:hover {
     text-shadow: 0 0 5px var(--neon-blue);
 }
 
-/* ------------------ Navbar ------------------ */
-
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: rgba(11, 15, 25, 0.5); /* Subtle transparency */
-    backdrop-filter: blur(8px); /* Glass effect */
-    border-bottom: 1px solid rgba(0, 186, 255, 0.2); /* Top divider glow */
+    background-color: rgba(11, 15, 25, 0.5); 
+    backdrop-filter: blur(8px); 
+    border-bottom: 1px solid rgba(0, 186, 255, 0.2); 
     padding: var(--medium-gap) 0;
 }
 
@@ -162,7 +144,7 @@ a:hover {
     position: relative;
     top:-14px;
     margin-left: 10px;
-    text-shadow: 0 0 8px var(--neon-blue); /* Logo glow */
+    text-shadow: 0 0 8px var(--neon-blue); 
 }
 
 .navbar .nav-links {
@@ -175,7 +157,7 @@ a:hover {
     color: var(--text-primary);
     font-weight: 400;
     position: relative;
-    padding-bottom: 5px; /* Space for underline */
+    padding-bottom: 5px; 
 }
 
 .navbar .nav-links a.active,
@@ -183,7 +165,6 @@ a:hover {
     color: var(--neon-blue);
 }
 
-/* Hover underline glow animation */
 .navbar .nav-links a:after {
     content: '';
     position: absolute;
@@ -201,14 +182,13 @@ a:hover {
     width: 100%;
 }
 
-/* ------------------ Hero Sections (Home & Page) ------------------ */
-
 .hero-section {
-    background: radial-gradient(circle at 10% 20%, #0b0f19 0%, #001f3f 100%); /* Subtle dark-tone gradient */
+    background: radial-gradient(circle at 10% 30%, #0b0f19 0%, #001f3f 100%); 
     padding: 100px 0;
-    min-height: 70vh;
+    min-height: 500px;
     display: flex;
     align-items: center;
+    
 }
 
 .hero-section .container {
@@ -216,6 +196,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     gap: var(--large-gap);
+    animation: fadeInUp 1s ease forwards ;
 }
 
 .hero-content {
@@ -225,13 +206,14 @@ a:hover {
 .hero-content h1 {
     font-size: 3.5rem;
     line-height: 1.1;
-    text-shadow: 0 0 10px rgba(0, 186, 255, 0.5); /* Heading glow */
+    text-shadow: 0 0 10px rgba(0, 186, 255, 0.5); 
 }
 
 .hero-content .tagline {
     font-size: 1.25rem;
     color: var(--text-secondary);
     margin-bottom: var(--large-gap);
+    animation: fadeInUp 1s ease forwards ;
 }
 
 .how-it-works,.cta-section{
@@ -241,7 +223,6 @@ a:hover {
     border-radius: 5px;
 }
 
-/* Specific page heroes (Products, Contact) */
 .page-hero {
     padding: 80px 0 60px;
     text-align: center;
@@ -261,12 +242,11 @@ a:hover {
     background-color: #0e111a;
 }
 
-/* ------------------ Featured Categories Section (Home) ------------------ */
-
 .featured-categories {
     padding: 80px 0;
     text-align: center;
     background-color: var(--background-dark);
+    
 }
 
 .category-grid {
@@ -274,6 +254,7 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--large-gap);
     margin-top: var(--large-gap);
+    animation: fadeSlideIn 1s ease forwards;
 }
 
 .category-card {
@@ -287,12 +268,11 @@ a:hover {
     align-items: center;
     text-align: center;
     opacity: 0;
-    /* transition is handled by the global * selector */
 }
 
 .category-card:hover {
     border-color: var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5); /* Card glow on hover */
+    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5); 
     transform: translateY(-5px);
 }
 
@@ -300,10 +280,9 @@ a:hover {
     font-size: 2.5rem;
     color: var(--neon-blue);
     margin-bottom: var(--medium-gap);
-    /* In a real project, this would be an SVG/Font Icon, but here it's a placeholder */
 }
 
-/* ------------------ Products Page ------------------ */
+/* -------------------------- Products Page ----------------------- */
 
 .products-filter-section {
     padding: var(--large-gap) 0;
@@ -334,7 +313,7 @@ a:hover {
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
-    appearance: none; /* Hide default arrow */
+    appearance: none;  
 }
 
 .search-box input {
@@ -384,7 +363,42 @@ a:hover {
     flex-direction: column;
     border: 1px solid transparent;
     opacity: 0;
-    /* transition is handled by the global * selector */
+}
+#p1{
+    animation-delay: 0.1s;
+}
+#p2{
+    animation-delay: 0.2s;
+}
+#p3{
+    animation-delay: 0.3s;
+}
+#p4{
+    animation-delay: 0.4s;
+}
+#p5{    
+    animation-delay: 0.5s;
+}
+#p6{
+    animation-delay: 0.6s;
+}
+#p7{
+    animation-delay: 0.7s;
+}
+#p8{
+    animation-delay: 0.8s;
+}   
+#p9{
+    animation-delay: 0.9s;
+}
+#p10{
+    animation-delay: 1s;
+}
+#p11{
+    animation-delay: 1.1s;
+}
+#p12{
+    animation-delay: 1.2s;
 }
 
 .product-card:hover {
@@ -460,10 +474,10 @@ a:hover {
 }
 
 .auth-form {
-    background: rgba(255, 255, 255, 0.05); /* Glass-morphism background */
+    background: rgba(255, 255, 255, 0.05);  
     backdrop-filter: blur(10px);
     border: 1px solid var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5); /* Glowing border */
+    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5); 
     padding: var(--large-gap);
     border-radius: 10px;
     max-width: 450px;
@@ -506,7 +520,7 @@ a:hover {
 .auth-form input:focus {
     outline: none;
     border-color: var(--neon-blue);
-    box-shadow: 0 0 8px var(--neon-blue); /* Input glow on focus */
+    box-shadow: 0 0 8px var(--neon-blue);  
 }
 
 .form-options {
@@ -530,8 +544,7 @@ a:hover {
 .auth-switch-text a {
     font-weight: 600;
 }
-
-/* Custom Checkbox Style (Login & Register) */
+ 
 .checkbox-container {
     display: block;
     position: relative;
@@ -593,7 +606,7 @@ a:hover {
     justify-content: flex-start;
 }
 
-/* ------------------ Contact Page ------------------ */
+/* -------------------------------- Contact Page ------------------------------- */
 
 .contact-details-section {
     padding: 80px 0;
@@ -613,8 +626,7 @@ a:hover {
     border-radius: 8px;
     border: 1px solid rgba(0, 186, 255, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    /* transition is handled by the global * selector */
+    opacity: 0; 
 }
 
 .detail-card:hover {
@@ -627,7 +639,6 @@ a:hover {
     font-size: 2.5rem;
     color: var(--neon-blue);
     margin-bottom: var(--medium-gap);
-    /* Placeholder for icon */
 }
 
 .detail-card p {
@@ -637,7 +648,7 @@ a:hover {
 
 .contact-form-section {
     padding: 80px 0;
-    background: #0d121c; /* Slightly different dark background */
+    background: #0d121c;  
 }
 
 .contact-form {
@@ -724,7 +735,7 @@ a:hover {
     display: inline-block;
     margin-right: 15px;
     text-decoration: none;
-    color: #9f7cff;       /* Purple CTA like the button in your screenshot */
+    color: #9f7cff; 
     font-weight: 500;
     transition: 0.2s;
 }
@@ -734,9 +745,7 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
-/* ------------------ Footer ------------------ */
+/* ----------------------------- Footer --------------------------------- */
 
 .footer {
     background-color: var(--background-dark);
@@ -778,7 +787,7 @@ a:hover {
 
 .footer-col ul li a:hover {
     color: var(--neon-blue);
-    padding-left: 5px; /* Subtle slide effect */
+    padding-left: 5px; 
 }
 
 .social-links {
@@ -817,7 +826,6 @@ a:hover {
 
 /* ------------------ CSS Animations ------------------ */
 
-/* Keyframes for Fade In (Used for H1, Taglines) */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -828,7 +836,6 @@ a:hover {
     animation: fadeIn 1s forwards;
 }
 
-/* Keyframes for Fade In Up (Used for Cards, Forms, CTAs) */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -849,7 +856,7 @@ a:hover {
 @keyframes fadeSlideIn {
     from {
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(-50px);
     }
     to {
         opacity: 1;
@@ -857,10 +864,22 @@ a:hover {
     }
 }
 
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
 
 /* ------------------ Responsiveness (Media Queries) ------------------ */
 
-/* Tablet and Smaller Desktops */
 @media (max-width: 992px) {
     .hero-section .container {
         flex-direction: column;
@@ -902,18 +921,6 @@ a:hover {
     }
 }
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-/* Mobile Devices */
 @media (max-width: 600px) {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.5rem; }
