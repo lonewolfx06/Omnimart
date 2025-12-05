@@ -591,8 +591,8 @@ a:hover {
     display: block;
 }
 .checkbox-container .checkmark:after {
-    left: 6px;
-    top: 2px;
+    left: 5px;
+    top: 0px;
     width: 5px;
     height: 10px;
     border: solid var(--background-dark);
@@ -931,6 +931,7 @@ a:hover {
     }
 
     .navbar .nav-links {
+        font-size: small;
         margin-top: var(--medium-gap);
         flex-wrap: wrap;
         justify-content: center;
