@@ -33,7 +33,7 @@
             rgb(69, 68, 68)
     );
     background-size: 400% 400%; 
-    animation: gradientShift 5s ease infinite;
+    animation: gradientShift 8s ease infinite;
 }
 
 .light-theme .navbar {
@@ -55,7 +55,7 @@
     
 }
 .light-theme .page-hero {
-    background: radial-gradient(circle at 80% 20%, #f4f4f8 0%, #d4af37 100%);
+    background: radial-gradient(circle at 40% 30%, #f4f4f8 0%, #d4af37 100%);
     
 }
 .light-theme .how-it-works,.light-theme .cta-section{
@@ -63,7 +63,7 @@
     border: 1px solid rgba(212, 175, 55, 0.3);
 }
 .light-theme .contact-form-section {
-    background: #f4f4f8;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .light-theme .team-card {
@@ -164,7 +164,7 @@ a:hover {
 .btn-primary:hover {
     background-color: var(--white);
     color: var(--background-dark);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.8); 
+    box-shadow: 0 0 15px var(--neon-blue); 
     transform: translateY(-2px);
 }
 
@@ -176,7 +176,7 @@ a:hover {
 }
 
 .btn-secondary:hover {
-    background-color: rgba(0, 186, 255, 0.1);
+    background-color: rgba(225, 255, 0, 0.1);
     box-shadow: 0 0 15px var(--neon-blue);
     transform: translateY(-2px);
 }
@@ -199,7 +199,7 @@ a:hover {
     z-index: 1000;
     background-color: rgba(11, 15, 25, 0.5); 
     backdrop-filter: blur(8px); 
-    border-bottom: 1px solid rgba(0, 186, 255, 0.2); 
+    border-bottom: 1px solid var(--neon-blue); 
     padding: var(--medium-gap) 0;
 }
 
@@ -286,7 +286,7 @@ a:hover {
 .hero-content h1 {
     font-size: 3.5rem;
     line-height: 1.1;
-    text-shadow: 0 0 10px rgba(0, 186, 255, 0.5); 
+    text-shadow: 0 0 10px var(--neon-blue); 
 }
 
 .hero-content .tagline {
@@ -307,12 +307,12 @@ a:hover {
     padding: 80px 0 60px;
     text-align: center;
     background-color: var(--card-dark);
-    border-bottom: 2px solid rgba(0, 186, 255, 0.1);
+    border-bottom: 2px solid var(--neon-blue);
 }
 
 .page-hero h1 {
     font-size: 3rem;
-    text-shadow: 0 0 8px rgba(0, 186, 255, 0.4);
+    text-shadow: 0 0 8px var(--neon-blue);
 }
 
 .products-hero {
@@ -352,7 +352,7 @@ a:hover {
 
 .category-card:hover {
     border-color: var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5); 
+    box-shadow: 0 0 15px var(--neon-blue); 
     transform: translateY(-5px);
 }
 
@@ -389,7 +389,7 @@ a:hover {
 .sort-dropdown select {
     background-color: var(--card-dark);
     color: var(--text-primary);
-    border: 1px solid rgba(0, 186, 255, 0.3);
+    border: 1px solid var(--neon-blue);
     padding: 10px;
     border-radius: 5px;
     font-size: 1rem;
@@ -438,7 +438,7 @@ a:hover {
     background-color: var(--card-dark);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--neon-blue);
     display: flex;
     flex-direction: column;
     border: 1px solid transparent;
@@ -483,7 +483,7 @@ a:hover {
 
 .product-card:hover {
     border-color: var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.4);
+    box-shadow: 0 0 15px var(--neon-blue);
     transform: translateY(-5px);
 }
 
@@ -512,7 +512,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: var(--medium-gap);
-    border-top: 1px solid rgba(0, 186, 255, 0.1);
+    border-top: 1px solid var(--neon-blue);
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -550,7 +550,7 @@ a:hover {
     background: rgba(255, 255, 255, 0.05);  
     backdrop-filter: blur(10px);
     border: 1px solid var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.5); 
+    box-shadow: 0 0 15px var(--neon-blue); 
     padding: var(--large-gap);
     border-radius: 10px;
     max-width: 450px;
@@ -563,7 +563,7 @@ a:hover {
 .auth-form h2 {
     margin-bottom: var(--large-gap);
     color: var(--white);
-    text-shadow: 0 0 5px rgba(0, 186, 255, 0.5);
+    text-shadow: 0 0 5px var(--neon-blue);
 }
 
 .form-group {
@@ -649,7 +649,7 @@ a:hover {
     border-radius: 3px;
 }
 .checkbox-container:hover input ~ .checkmark {
-    background-color: #333;
+    background-color: var(--text-secondary);
 }
 .checkbox-container input:checked ~ .checkmark {
     background-color: var(--neon-blue);
@@ -698,13 +698,13 @@ a:hover {
     padding: var(--large-gap);
     border-radius: 8px;
     border: 1px solid rgba(0, 186, 255, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px var(--neon-blue);
     opacity: 0; 
 }
 
 .detail-card:hover {
     border-color: var(--neon-blue);
-    box-shadow: 0 0 15px rgba(0, 186, 255, 0.3);
+    box-shadow: 0 0 15px var(--neon-blue);
     transform: translateY(-5px);
 }
 
@@ -729,8 +729,8 @@ a:hover {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(5px);
-    border: 1px solid rgba(0, 186, 255, 0.2);
-    box-shadow: 0 0 12px rgba(0, 186, 255, 0.4);
+    border: 1px solid var(--neon-blue);
+    box-shadow: 0 0 12px var(--neon-blue);
     padding: var(--large-gap);
     border-radius: 10px;
     opacity: 0;
@@ -748,7 +748,7 @@ a:hover {
     width: 100%;
     padding: 12px 15px;
     background-color: var(--card-dark);
-    border: 1px solid rgba(0, 186, 255, 0.2);
+    border: 1px solid var(--neon-blue);
     border-radius: 5px;
     color: var(--text-primary);
     font-size: 1rem;
@@ -789,7 +789,7 @@ a:hover {
     padding: 20px;
     width: 300px;
     border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.1);
     backdrop-filter: blur(6px);
 }
 
@@ -825,7 +825,7 @@ a:hover {
     color: var(--text-secondary);
     padding: 60px 0 20px;
     border-top: 2px solid;
-    border-image: linear-gradient(to right, transparent, rgba(0, 186, 255, 0.5), transparent) 1; /* Horizontal divider glow effect */
+    border-image: linear-gradient(to right, transparent, var(--neon-blue), transparent) 1; /* Horizontal divider glow effect */
 }
 
 .footer-grid {
@@ -875,7 +875,7 @@ a:hover {
     height: 30px;
     border-radius: 50%;
     overflow: hidden;
-    border: 1px solid rgba(0, 186, 255, 0.3);
+    border: 1px solid var(--neon-blue);
 }
 
 .social-links a:hover {
@@ -1016,13 +1016,13 @@ a:hover {
 
     .navbar .nav-links {
         position: relative;
-        right: 50px;
+        right: 0px;
         font-size: small;
         margin-top: var(--medium-gap);
         flex-wrap: wrap;
         justify-content: center;
         gap: var(--small-gap);
-        margin-left: 150px;
+        margin-left: 100px;
     }
 
     .navbar .logo a {
@@ -1069,10 +1069,16 @@ a:hover {
         font-size: 1rem;
     }
     #theme-toggle {
-        right: 5px;
-        top: 25px;
+        right: 15px;
+        top: 28px;
         width: 30px;
         height: 30px;
         font-size: 11px;
+    }
+    .nav-links{
+        position: relative;
+        right: 20px;
+        font-size: small;
+        margin-left: 50px;
     }
 }
