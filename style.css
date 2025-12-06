@@ -522,13 +522,6 @@ a:hover {
     color: var(--neon-blue);
 }
 
-.pagination {
-    margin-top: var(--large-gap);
-    display: flex;
-    justify-content: center;
-    gap: var(--small-gap);
-}
-
 .page-link {
     padding: 8px 15px;
     border: 1px solid var(--neon-blue);
