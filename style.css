@@ -11,12 +11,72 @@
     --medium-gap: 16px;
     --large-gap: 32px;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.3s ease;
+}
+
+.light-theme {
+    --background-dark: #f4f4f8;      
+    --card-dark: #ffffff;            
+    --neon-blue: #d4af37;            
+    --text-primary: #222222;         
+    --text-secondary: #898686;  
+    --white: #000000;
+
+    background: linear-gradient(135deg, 
+         
+        rgb(69, 68, 68), rgb(245, 245, 243)
+        ,
+            rgb(69, 68, 68)
+    );
+    background-size: 400% 400%; 
+    animation: gradientShift 5s ease infinite;
+}
+
+.light-theme .navbar {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); 
+}
+
+
+.light-theme .auth-form {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.light .theme .contact-form {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.light-theme .hero-section {
+    background: radial-gradient(circle at 10% 30%, #f4f4f8 0%, #d4af37 100%);
+    
+}
+.light-theme .page-hero {
+    background: radial-gradient(circle at 80% 20%, #f4f4f8 0%, #d4af37 100%);
+    
+}
+.light-theme .how-it-works,.light-theme .cta-section{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+.light-theme .contact-form-section {
+    background: #f4f4f8;
+}
+
+.light-theme .team-card {
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.light-theme .team-card .team-links a {
+    color: #bfa14c; 
+}
+
+.light-theme .team-subtitle {
+    color: #555555;
 }
 
 body {
@@ -30,7 +90,7 @@ body {
         green   
     );
     background-size: 400% 400%; 
-    animation: gradientShift 12s ease infinite; 
+    animation: gradientShift 8s ease infinite; 
 }
 
 .container {
@@ -65,6 +125,24 @@ a:hover {
     text-shadow: 0 0 5px var(--neon-blue); 
 }
 
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--neon-blue);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--neon-blue);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+#theme-toggle:hover {
+    background-color: var(--white);
+    color: var(--neon-blue);
+    box-shadow: 0 0 15px var(--neon-blue);
+}
 .btn-primary, .btn-secondary {
     display: inline-block;
     padding: 10px 25px;
@@ -151,6 +229,8 @@ a:hover {
     list-style: none;
     display: flex;
     gap: var(--large-gap);
+    position: relative;
+    right: 50px;
 }
 
 .navbar .nav-links a {
@@ -880,7 +960,7 @@ a:hover {
 
 /* ------------------ Responsiveness (Media Queries) ------------------ */
 
-@media (max-width: 992px) {
+@media (max-width: 1192px) {
     .hero-section .container {
         flex-direction: column;
         text-align: center;
@@ -900,7 +980,10 @@ a:hover {
     }
 
     .navbar .nav-links {
+        position: relative;
         gap: var(--medium-gap);
+        margin-right: 80px;
+        right: 20px;
     }
 
     .filter-controls {
@@ -921,7 +1004,7 @@ a:hover {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 780px) {
     h1 { font-size: 2rem; }
     h2 { font-size: 1.5rem; }
 
@@ -930,12 +1013,23 @@ a:hover {
         text-align: center;
     }
 
+    #theme-toggle {
+        right: 50px;
+        top: 25px;
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
     .navbar .nav-links {
+        position: relative;
+        right: 50px;
         font-size: small;
         margin-top: var(--medium-gap);
         flex-wrap: wrap;
         justify-content: center;
         gap: var(--small-gap);
+        margin-left: 150px;
     }
 
     .navbar .logo a {
@@ -970,5 +1064,22 @@ a:hover {
 
     .cta-buttons {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .tagline {
+        font-size: 1rem;
+    }
+    #theme-toggle {
+        right: 5px;
+        top: 25px;
+        width: 30px;
+        height: 30px;
+        font-size: 11px;
     }
 }
